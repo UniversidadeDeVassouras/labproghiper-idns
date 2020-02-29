@@ -7,22 +7,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon.ico', _external=True)}}">
 
 		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/gijgo.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-            <link rel="stylesheet" href="assets/css/responsive.css">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/gijgo.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/slicknav.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/magnific-popup.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/fontawesome-all.min.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/themify-icons.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/slick.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/nice-select.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/style.css', _external=True)}}">
+            <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css', _external=True)}}">
    </head>
 
    <body>
@@ -33,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
+                    <img src="{{url_for('static', filename='img/logo/logo.png', _extenal=True)}}" alt="">
                 </div>
             </div>
         </div>
@@ -69,7 +68,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-1 col-md-1">
                                 <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="{{url_for('principal')}}"><img src="{{url_for('static', filename='img/logo/logo.png', _extenal=True)}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-8 col-md-8">
@@ -77,17 +76,17 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="industries.html">Industries</a></li>
-                                            <li><a href="work.html">Works</a></li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="{{url_for('principal')}}">Home</a></li>
+                                            <li><a href="{{url_for('sobre')}}">About</a></li>
+                                            <li><a href="{{url_for('industria')}}">Industries</a></li>
+                                            <li><a href="{{url_for('trabalho')}}">Works</a></li>
+                                            <li><a href="{{url_for('blog')}}">Blog</a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
+                                                    <li><a href="{{url_for('blog')}}">Blog</a></li>
+                                                    <li><a href="{{url_for('blogDetalhes')}}">Blog Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="{{url_for('contato')}}">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -115,7 +114,7 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
-            <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/Industries_hero.jpg">
+            <div class="single-slider slider-height2 d-flex align-items-center" data-background="{{url_for('static', filename='img/hero/Industries_hero.jpg', _extenal=True)}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -137,7 +136,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_1.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_1.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>01.</span>
@@ -147,7 +146,7 @@
                                     <span>01.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +155,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_7.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_7.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>02.</span>
@@ -166,7 +165,7 @@
                                     <span>02.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +174,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_3.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_3.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>03.</span>
@@ -185,7 +184,7 @@
                                     <span>03.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -194,7 +193,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_2.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_2.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>04.</span>
@@ -204,7 +203,7 @@
                                     <span>04.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +212,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_4.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_4.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>05.</span>
@@ -223,7 +222,7 @@
                                     <span>05.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +231,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_5.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_5.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>06.</span>
@@ -242,7 +241,7 @@
                                     <span>06.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +250,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_6.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_6.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>07.</span>
@@ -261,7 +260,7 @@
                                     <span>07.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +269,7 @@
                         <div class="gallery-box">
                             <div class="single-gallery">
                                 <div class="gallery-img">
-                                    <img src="assets/img/gallery/gallery_7.png" alt="">
+                                    <img src="{{url_for('static', filename='img/gallery/gallery_7.png', _extenal=True)}}" alt="">
                                 </div>
                                 <div class="g-caption1">
                                     <span>08.</span>
@@ -280,7 +279,7 @@
                                     <span>08.</span>
                                     <h4>Floride Chemicals Factory</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur smo adipiscing elit, sed do eiusmod tempor inciut labore et dolore magna ali.</p>
-                                    <a href="work.html" class="read-btn">Read more</a>
+                                    <a href="{{url_for('trabalho')}}" class="read-btn">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +327,7 @@
                         </div>
                          <!-- logo -->
                          <div class="footer-logo">
-                           <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                           <a href="{{url_for('trabalho')}}"><img src="{{url_for('static', filename='img/logo/logo2_footer.png', _extenal=True)}}" alt=""></a>
                          </div>
                       </div>
                    </div>
@@ -378,7 +377,7 @@
                                         onblur="this.placeholder = ' Email Address '">
                                         <div class="form-icon">
                                             <button type="submit" name="submit" id="newsletter-submit"
-                                            class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form_icon.png" alt=""></button>
+                                            class="email_icon newsletter-submit button-contactForm"><img src="{{url_for('static', filename='img/icon/form_icon.png', _extenal=True)}}" alt=""></button>
                                         </div>
                                         <div class="mt-10 info"></div>
                                     </form>
@@ -418,41 +417,42 @@
    </footer>
    
 	<!-- JS here -->
+	
 		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="{{url_for('static', filename='js/vendor/modernizr-3.5.0.min.js', _external=True)}}"></script>
 		
 		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
+		<script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/popper.min.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/bootstrap.min.js', _external=True)}}"></script>
 	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+        <script src="{{url_for('static', filename='js/jquery.slicknav.min.js', _external=True)}}"></script>
 
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
+        <script src="{{url_for('static', filename='js/owl.carousel.min.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/slick.min.js', _external=True)}}"></script>
         <!-- Date Picker -->
-        <script src="./assets/js/gijgo.min.js"></script>
+        <script src="{{url_for('static', filename='js/gijgo.min.js', _external=True)}}"></script>
 		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+        <script src="{{url_for('static', filename='js/wow.min.js', _external=True)}}"></script>
+		<script src="{{url_for('static', filename='js/animated.headline.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.magnific-popup.js', _external=True)}}"></script>
 
 		<!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
+        <script src="{{url_for('static', filename='js/jquery.scrollUp.min.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.nice-select.min.js', _external=True)}}"></script>
+		<script src="{{url_for('static', filename='js/jquery.sticky.js', _external=True)}}"></script>
         
         <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="{{url_for('static', filename='js/contact.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.form.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.validate.min.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/mail-script.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.ajaxchimp.min.js', _external=True)}}"></script>
         
 		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+        <script src="{{url_for('static', filename='js/plugins.js', _external=True)}}"></script>
+        <script src="{{url_for('static', filename='js/main.js', _external=True)}}"></script>
         
     </body>
 </html>
